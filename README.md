@@ -1,113 +1,90 @@
 # CLI Calculator
 
-A professional command-line calculator application built with Node.js and Inquirer.
+**An interactive command-line calculation product built for fast, validated local arithmetic.**
 
----
+CLI Calculator provides a focused terminal interface for repeated calculations without requiring a browser, hosted account, or graphical application.
 
-## Features
+## Product purpose
 
-- Addition
-- Subtraction
-- Multiplication
-- Division
-- Modulo calculations
-- Interactive command-line prompts
-- Input validation
-- Repeat calculation loop
-- Clean modular function structure
+The product is designed to make common calculations quick and reliable through a guided command-line workflow.
 
----
+Current operations include:
 
-## Technologies Used
+- addition;
+- subtraction;
+- multiplication;
+- division;
+- modulo calculations;
+- numeric input validation;
+- operation selection;
+- repeated calculation sessions.
+
+## Operating flow
+
+```text
+Launch application
+    -> enter first value
+    -> enter second value
+    -> select operation
+    -> validate inputs
+    -> execute calculation
+    -> display result
+    -> continue or exit
+```
+
+## Architecture
+
+```text
+Interactive CLI
+    -> input-validation layer
+    -> operation router
+    -> calculation functions
+    -> formatted result output
+    -> repeat-control loop
+```
+
+The implementation uses a small CommonJS Node.js application with Inquirer for terminal interaction and modular functions for calculation logic.
+
+## Technology
 
 - Node.js
 - JavaScript
+- CommonJS modules
 - Inquirer
-
----
 
 ## Installation
 
-Clone the repository:
-
 ```bash
 git clone https://github.com/mrcodeislife718/cli-calculator.git
-```
-
-Go into the project folder:
-
-```bash
 cd cli-calculator
-```
-
-Install dependencies:
-
-```bash
 npm install
 ```
 
----
-
-## Run the Application
+## Run
 
 ```bash
 node index.js
 ```
 
----
+## Example
 
-## Example Usage
-
-```bash
+```text
 Enter first number: 10
 Enter second number: 5
 Choose operation: *
-
 Result: 50
 ```
 
----
+## Product direction
 
-## Project Structure
+The product architecture can expand to support calculation history, scientific operations, unit conversion, configurable precision, saved sessions, and additional interfaces while retaining the command-line product as an independent distribution.
 
-```bash
-cli-calculator/
-│
-├── index.js
-├── package.json
-├── package-lock.json
-├── .gitignore
-└── README.md
-```
+## Repository status
 
----
+This repository contains the current independent CLI Calculator implementation. It is not classified as a learning exercise, subordinate feature, or placeholder for another product.
 
-## Learning Goals
+## Ownership and licensing
 
-This project was built to practice:
+CLI Calculator is independently designed and developed by **Charles Castillo**.
 
-- Async JavaScript
-- User input handling
-- Functions and modular logic
-- Validation
-- Switch statements
-- Recursion and repeated execution flow
-- CLI application architecture
-- Git and GitHub workflows
-
----
-
-## Future Improvements
-
-- Save calculation history
-- Scientific calculator mode
-- Better error handling
-- Unit conversion tools
-- GUI version
-- Web application version
-
----
-
-## Author
-
-GitHub: [mrcodeislife718](https://github.com/mrcodeislife718)
+The package is currently distributed under the **ISC License**.
